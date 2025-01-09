@@ -1,0 +1,155 @@
+==1991== Memcheck, a memory error detector
+==1991== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1991== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==1991== Command: ./performance
+==1991==
+
+
+************************************
+        Ascending insert for cs540::Map<int, int>
+************************************
+
+Inserting 1,000 elements in aescending order took 9.8131 milliseconds
+Inserting 10,000 elements in aescending order took 47.35 milliseconds
+Inserting 100,000 elements in aescending order took 477.114 milliseconds
+Inserting 1,000,000 elements in aescending order took 5,096.97 milliseconds
+Inserting 10,000,000 elements in aescending order took 53,827.6 milliseconds
+
+
+************************************
+        Ascending insert for cs540::StdMapWrapper<int, int>
+************************************
+
+Inserting 1,000 elements in aescending order took 3,409.51 milliseconds
+Inserting 10,000 elements in aescending order took 13.3479 milliseconds
+Inserting 100,000 elements in aescending order took 137.943 milliseconds
+Inserting 1,000,000 elements in aescending order took 1,376.9 milliseconds
+Inserting 10,000,000 elements in aescending order took 14,946.3 milliseconds
+
+
+************************************
+        Descending insert for cs540::Map<int, int>
+************************************
+
+Inserting 1,000 elements in descending order took 773.29 milliseconds
+Inserting 10,000 elements in descending order took 52.65 milliseconds
+Inserting 100,000 elements in descending order took 539.345 milliseconds
+Inserting 1,000,000 elements in descending order took 4,700.92 milliseconds
+Inserting 10,000,000 elements in descending order took 48,132 milliseconds
+
+
+************************************
+        Descending insert for cs540::StdMapWrapper<int, int>
+************************************
+
+Inserting 1,000 elements in descending order took 3,104.36 milliseconds
+Inserting 10,000 elements in descending order took 14.591 milliseconds
+Inserting 100,000 elements in descending order took 139.694 milliseconds
+Inserting 1,000,000 elements in descending order took 1,427.44 milliseconds
+Inserting 10,000,000 elements in descending order took 14,800.6 milliseconds
+
+
+************************************
+        Delete test for cs540::Map<int, int>
+************************************
+
+deleting 10000 elements from a map of size 10000 took 68.6245 milliseconds
+deleting 10000 elements from a map of size 100000 took 79.4034 milliseconds
+deleting 10000 elements from a map of size 1000000 took 85.5449 milliseconds
+deleting 10000 elements from a map of size 10000000 took 99.8064 milliseconds
+
+
+************************************
+        Delete test for cs540::StdMapWrapper<int, int>
+************************************
+
+deleting 10000 elements from a map of size 10000 took 14.4227 milliseconds
+deleting 10000 elements from a map of size 100000 took 19.0151 milliseconds
+deleting 10000 elements from a map of size 1000000 took 22.3539 milliseconds
+deleting 10000 elements from a map of size 10000000 took 35.3853 milliseconds
+
+
+************************************
+        Find test for cs540::Map<int, int>
+************************************
+
+Finding 10000 elements from a map of size 10,000 took 73.1976 milliseconds
+Finding 10000 elements from a map of size 100,000 took 96.542 milliseconds
+Finding 10000 elements from a map of size 1,000,000 took 103.735 milliseconds
+Finding 10000 elements from a map of size 10,000,000 took 117.802 milliseconds
+
+
+************************************
+        Find test for cs540::StdMapWrapper<int, int>
+************************************
+
+Finding 10000 elements from a map of size 10,000 took 15.8024 milliseconds
+Finding 10000 elements from a map of size 100,000 took 20.2314 milliseconds
+Finding 10000 elements from a map of size 1,000,000 took 26.5799 milliseconds
+Finding 10000 elements from a map of size 10,000,000 took 30.7575 milliseconds
+
+
+************************************
+        Iteration test for cs540::Map<int, int>
+************************************
+
+Iterating across 10,000 elements in a map of size 10,000 took 0.7295 milliseconds time per iteration was 72.95 nanoseconds
+Iterating across 20,000 elements in a map of size 20,000 took 2.0847 milliseconds time per iteration was 104.235 nanoseconds
+Iterating across 40,000 elements in a map of size 40,000 took 4.2283 milliseconds time per iteration was 105.708 nanoseconds
+Iterating across 80,000 elements in a map of size 80,000 took 10.7805 milliseconds time per iteration was 134.756 nanoseconds
+Iterating across 160,000 elements in a map of size 160,000 took 20.6538 milliseconds time per iteration was 129.086 nanoseconds
+Iterating across 320,000 elements in a map of size 320,000 took 35.8086 milliseconds time per iteration was 111.902 nanoseconds
+Iterating across 640,000 elements in a map of size 640,000 took 55.1053 milliseconds time per iteration was 86.102 nanoseconds
+Iterating across 1,280,000 elements in a map of size 1,280,000 took 108.208 milliseconds time per iteration was 84.5375 nanoseconds
+Iterating across 2,560,000 elements in a map of size 2,560,000 took 140.24 milliseconds time per iteration was 54.7812 nanoseconds
+Iterating across 5,120,000 elements in a map of size 5,120,000 took 263.615 milliseconds time per iteration was 51.4874 nanoseconds
+
+
+************************************
+        Iteration test for cs540::StdMapWrapper<int, int>
+************************************
+
+Iterating across 10,000 elements in a map of size 10,000 took 1.3053 milliseconds time per iteration was 130.53 nanoseconds
+Iterating across 20,000 elements in a map of size 20,000 took 2.8028 milliseconds time per iteration was 140.14 nanoseconds
+Iterating across 40,000 elements in a map of size 40,000 took 3.4365 milliseconds time per iteration was 85.9125 nanoseconds
+Iterating across 80,000 elements in a map of size 80,000 took 8.2719 milliseconds time per iteration was 103.399 nanoseconds
+Iterating across 160,000 elements in a map of size 160,000 took 13.5476 milliseconds time per iteration was 84.6725 nanoseconds
+Iterating across 320,000 elements in a map of size 320,000 took 24.4137 milliseconds time per iteration was 76.2928 nanoseconds
+Iterating across 640,000 elements in a map of size 640,000 took 47.3232 milliseconds time per iteration was 73.9425 nanoseconds
+Iterating across 1,280,000 elements in a map of size 1,280,000 took 97.7027 milliseconds time per iteration was 76.3302 nanoseconds
+Iterating across 5,120,000 elements in a map of size 5,120,000 took 383.364 milliseconds time per iteration was 74.8757 nanoseconds
+
+
+************************************
+        Copy test for cs540::Map<int, int>
+************************************
+
+Copy construction of a map of size 10,000 took 55.8206 milliseconds
+Copy construction of a map of size 100,000 took 538.67 milliseconds
+Copy construction of a map of size 1,000,000 took 5,077.14 milliseconds
+Copy construction of a map of size 10,000,000 took 61,751.9 milliseconds
+
+
+************************************
+        Copy test for cs540::StdMapWrapper<int, int>
+************************************
+
+Copy construction of a map of size 10,000 took 9.9012 milliseconds
+Copy construction of a map of size 100,000 took 109.542 milliseconds
+Copy construction of a map of size 1,000,000 took 887.421 milliseconds
+Copy construction of a map of size 10,000,000 took 8,240.8 milliseconds
+==1991==
+==1991== HEAP SUMMARY:
+==1991==     in use at exit: 1,391 bytes in 15 blocks
+==1991==   total heap usage: 382,298,257 allocs, 382,298,242 frees, 28,857,893,654 bytes allocated
+==1991==
+==1991== LEAK SUMMARY:
+==1991==    definitely lost: 0 bytes in 0 blocks
+==1991==    indirectly lost: 0 bytes in 0 blocks
+==1991==      possibly lost: 0 bytes in 0 blocks
+==1991==    still reachable: 1,391 bytes in 15 blocks
+==1991==         suppressed: 0 bytes in 0 blocks
+==1991== Rerun with --leak-check=full to see details of leaked memory
+==1991==
+==1991== For counts of detected and suppressed errors, rerun with: -v
+==1991== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

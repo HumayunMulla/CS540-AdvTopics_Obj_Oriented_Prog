@@ -1,0 +1,11 @@
+Enter messages to be translated (CTRL+D to exit)
+C
+-.-.
+S
+...
+5
+.....
+4
+....-
+0
+-----
